@@ -1,0 +1,26 @@
+# Ignore data files
+data/
+*.csv
+*.json
+*.xlsx
+*.hdf5
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Jupyter Notebook outputs
+*.ipynb~
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore package managers files
+*.log
+
+
+# Ignore Markdown files and reports
+#*.md
+*.pdf
+#report.html
