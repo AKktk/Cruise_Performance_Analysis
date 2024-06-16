@@ -16,5 +16,7 @@ cd Cruise_Performance_Analysis
 ```
 
 ### Usage
-1. Run the utility functions with : python utility.py
-2. 
+1. Run the utility functions with : 
+```python utility.py```
+2. Run the trends script for resampling with : 
+```python trends.py```
