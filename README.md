@@ -20,3 +20,5 @@ cd Cruise_Performance_Analysis
 ```python utility.py```
 2. Run the trends script for resampling with : 
 ```python trends.py```
+3. Run the plot.py script for visualizing the trend in time and mutual relationships
+```python plot.py```
