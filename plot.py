@@ -1,7 +1,22 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-   
+# Function to plot distribution of all features
+def feature_distribution(df):
+    columns_to_plot = [col for col in df.columns if col not in ['Start Time', 'End Time', 'Vessel Name']]
+    
+    # Create a histogram for each column
+    for col in columns_to_plot:
+        plt.figure(figsize=(10, 6))
+        df[col].hist(bins=30, alpha=0.75, color='blue')
+        plt.title(f'Distribution of {col}')
+        plt.xlabel(col)
+        plt.ylabel('Frequency')
+        plt.grid(False)
+        plt.show()
+
+
+
 def trend_plot(hourly_data, daily_data, weekly_data, monthly_data, feature):
     # Create subplots
     fig, axs = plt.subplots(2, 2, figsize=(14, 10))
