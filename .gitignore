@@ -6,7 +6,7 @@ data/
 *.hdf5
 eda_files/
 *.png
-*.jpg
+#*.jpg
 
 # Ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/
