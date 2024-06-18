@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
+
 # Function to plot distribution of all features
 def feature_distribution(df):
     columns_to_plot = [col for col in df.columns if col not in ['Start Time', 'End Time', 'Vessel Name']]
@@ -13,6 +15,19 @@ def feature_distribution(df):
         plt.xlabel(col)
         plt.ylabel('Frequency')
         plt.grid(False)
+        plt.show()
+
+# Function to do a boxplot comparison of features
+def feature_boxplot(df):
+    columns_to_plot = [col for col in df.columns if col not in ['Start Time', 'End Time', 'Vessel Name']]
+    
+    # Create a boxplot for each column
+    for col in columns_to_plot:
+        plt.figure(figsize=(10, 6))
+        sns.boxplot(x='Vessel Name', y=col, data=df)
+        plt.title(f'Boxplot of {col} for Comparison between Vessels')
+        plt.xlabel('Vessel Name')
+        plt.ylabel(col)
         plt.show()
 
 

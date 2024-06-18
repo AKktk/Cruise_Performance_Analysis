@@ -22,3 +22,9 @@ cd Cruise_Performance_Analysis
 ```python trends.py```
 3. Run the plot.py script for visualizing the trend in time and mutual relationships
 ```python plot.py```
+4. Run kpi
+5. forecast.py
+
+### Details:
+The energy flow diagram:
+![Flow Diagram of the System](EnergyFlowDiagram.jpg)
