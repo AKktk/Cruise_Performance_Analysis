@@ -15,6 +15,7 @@ Ensure you have the following software installed on your system:
 
 - Python 3 or higher
 - 4 core processor or higher
+- have the data file as  data.csv in data/ directory. 
 
 ### Installation
 1. Clone the repository:
@@ -22,17 +23,20 @@ Ensure you have the following software installed on your system:
 git clone https://github.com/AKktk/Cruise_Performance_Analysis.git
 cd Cruise_Performance_Analysis
 ```
+2. Place the data/data.csv in the repository
 
 ### Usage
+- Use ```make``` to run the Makefile for entire scripts, alternatively: 
+
 1. Run the utility functions with : 
 ```python utility.py```
 2. Run the trends script for resampling with : 
 ```python trends.py```
 3. Run the plot.py script for visualizing the trend in time and mutual relationships
 ```python plot.py```
-4. KPI Computation happens in the script kpi_computation.py
+4. KPI Computation happens in the script kpi_computation.py run
 ```kpi_computation.py```
-5. Time Forecasting for the dataset is done in: forecast.py
+5. Time Forecasting for the dataset is done in: forecast.py run
 ```forecast.py```
 6. The major analyses, visualizations and conclusions are all in eda.ipynb. This is a jupyer notebook where all the scripts are imported, and functions can be run cell by cell.
 
@@ -70,3 +74,7 @@ report.pdf is the pdf format for it.
 After loading the data, I jump into a distribution and multi-collinearity analysis. This is followed by a trend analysis and pair-plots at a more aggrregated time level. This is followed by KPI definition, analysis and lastly a forecast model that is based on only external geographical features and ship performance requiremnt. None of these features have been used in derivation of KPIs and can be available before the cruise starts. This helps in pre-planning and optimizing the cruise better.
 
 -Thanks **Karthik Ananthakrishnan**
+
+### Further 
+For further analysis I found a multivariate time-series clustering algorithm: https://github.com/davidhallac/TICC, but it requires additional download and setup.
+The 
