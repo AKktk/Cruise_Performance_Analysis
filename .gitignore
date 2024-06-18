@@ -4,6 +4,9 @@ data/
 *.json
 *.xlsx
 *.hdf5
+eda_files/
+*.png
+*.jpg
 
 # Ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/
@@ -22,5 +25,5 @@ __pycache__/
 
 # Ignore Markdown files and reports
 #*.md
-*.pdf
-#report.html
+#.pdf
+*.html
